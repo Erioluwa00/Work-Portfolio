@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, Check } from "lucide-react";
 import { PROFILE, PROJECTS, SERVICES, PROCESS, FAQS } from "../data/portfolioData";
 import ProjectPlate from "../components/ProjectPlate";
-import ProjectCard from "../components/ProjectCard";
+// import ProjectCard from "../components/ProjectCard";
 import Marquee from "../components/Marquee";
 
 // Stagger container animation
@@ -91,7 +91,7 @@ function PackageDetailModal({ service, onClose, onInquire }) {
 
 export default function Home({ onOpenContact }) {
   const featured = PROJECTS.slice(0, 5);
-  const rest = PROJECTS.slice(5);
+  // const rest = PROJECTS.slice(5);
 
   const [activeFaq, setActiveFaq] = useState(null);
   const [activeDetailPackage, setActiveDetailPackage] = useState(null);
@@ -174,7 +174,7 @@ export default function Home({ onOpenContact }) {
         <div className="pf-section-label">
           <span>projects we've worked on</span>
           <span>
-            {featured.length} of {PROJECTS.length} shown
+            {featured.length} projects shown
           </span>
         </div>
         {featured.map((project, i) => {
@@ -194,7 +194,7 @@ export default function Home({ onOpenContact }) {
         })}
       </section>
 
-      {/* Grid of other projects */}
+      {/* Grid of other projects commented out for now
       {rest.length > 0 && (
         <section className="pf-more" style={{ marginTop: "2rem" }}>
           <div className="pf-grid">
@@ -213,6 +213,7 @@ export default function Home({ onOpenContact }) {
           </div>
         </section>
       )}
+      */}
 
       {/* Services & Packages Section */}
       <section className="pf-services-section" id="services">

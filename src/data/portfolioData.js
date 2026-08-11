@@ -131,7 +131,7 @@ export const PROCESS = [
 export const FAQS = [
   {
     question: "How long does a website take to build?",
-    answer: "A standard Landing Page takes 1-2 weeks. A complete Professional Business Site takes 3-4 weeks, and custom E-commerce storefronts take 4-6 weeks depending on product catalog complexity."
+    answer: "A standard Landing Page takes 1-2 months. A complete Professional Business Site takes 2-3 months, and custom E-commerce storefronts take 3-4 months depending on product catalog complexity."
   },
   {
     question: "Will my website work on mobile devices?",
@@ -159,7 +159,7 @@ export const PROJECTS = [
     year: "2026",
     tags: ["Headless Retail", "Shopify Storefront", "Payment Setup"],
     image: soreImg,
-    link: "https://sore-menswear.vercel.app",
+    link: "https://soreclothings.netlify.app",
     description: "Sore is a custom, high-end online shop designed for a luxury menswear label. The digital experience mirrors the brand's premium identity, focusing on a clean, lookbook-style product presentation and a seamless, distraction-free checkout flow that makes buying effortless for customers.",
     challenge: "The retail brand wanted a highly considered digital lookbook but struggled with slow loading speeds on standard storefront templates, causing users to abandon their shopping carts on mobile devices.",
     solution: "We engineered a custom headless React storefront connected directly to Shopify's APIs. Page load times were reduced to under 120ms (instant loading), increasing mobile checkout conversions by 28%.",
@@ -187,7 +187,7 @@ export const PROJECTS = [
     year: "2025",
     tags: ["Subscription Commerce", "React", "Stripe API"],
     image: auroraImg,
-    link: "https://aurora-roastery.vercel.app",
+    link: "https://aurorajewelries.netlify.app/",
     description: "Aurora is a direct-to-consumer brand website and automated subscription portal for a small-batch coffee roastery. It allows coffee enthusiasts to receive freshly roasted coffee beans delivered to their doorstep on a recurring weekly or monthly schedule.",
     challenge: "The roastery needed to build recurring subscription revenue but found standard commerce checkout builders lacked grind-size customization controls, leading to customer frustration and cancellations.",
     solution: "We engineered a clean, user-friendly subscription dashboard integrated with Stripe Billing. Customers can easily customize their grind preference, pause or skip deliveries, and change schedules, growing recurring revenue by 35%.",
@@ -215,7 +215,7 @@ export const PROJECTS = [
     year: "2024",
     tags: ["Next.js", "Reservations", "CMS"],
     image: lumeaImg,
-    link: "https://lumea-winebar.vercel.app",
+    link: "https://uselumea.netlify.app",
     description: "Lumea is a sleek digital menu and online reservation website for an upscale boutique wine bar and restaurant. The site establishes a sophisticated online presence that reflects the physical ambiance of the restaurant.",
     challenge: "The restaurant changes its wine list and menu daily based on seasonal availability, making standard website updates slow and difficult for non-technical staff.",
     solution: "We integrated a simple content management dashboard that allows restaurant staff to update the menu instantly from their phones. We also integrated an automated table reservation system that keeps bookings organized.",
