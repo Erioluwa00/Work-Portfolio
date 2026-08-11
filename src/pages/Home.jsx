@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Check } from "lucide-react";
 import { PROFILE, PROJECTS, SERVICES, PROCESS, FAQS } from "../data/portfolioData";
@@ -90,11 +90,24 @@ function PackageDetailModal({ service, onClose, onInquire }) {
 }
 
 export default function Home({ onOpenContact }) {
-  const [showAll, setShowAll] = useState(false);
-  const [activeFaq, setActiveFaq] = useState(null);
-  const [activeDetailPackage, setActiveDetailPackage] = useState(null);
   const featured = PROJECTS.slice(0, 5);
   const rest = PROJECTS.slice(5);
+
+  const [activeFaq, setActiveFaq] = useState(null);
+  const [activeDetailPackage, setActiveDetailPackage] = useState(null);
+
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const timer = setTimeout(() => {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, []);
 
   return (
     <motion.div
@@ -168,6 +181,7 @@ export default function Home({ onOpenContact }) {
           const isEven = i % 2 === 0;
           return (
             <motion.div
+              id={`project-${project.id}`}
               key={project.id}
               initial={{ opacity: 0, x: isEven ? -60 : 60, y: 15 }}
               whileInView={{ opacity: 1, x: 0, y: 0 }}
@@ -180,28 +194,23 @@ export default function Home({ onOpenContact }) {
         })}
       </section>
 
-      {/* View More Grid */}
+      {/* Grid of other projects */}
       {rest.length > 0 && (
-        <section className="pf-more">
-          {!showAll ? (
-            <button className="pf-viewmore" onClick={() => setShowAll(true)}>
-              View all {PROJECTS.length} projects
-            </button>
-          ) : (
-            <div className="pf-grid">
-              {rest.map((project, index) => (
-                <motion.div
-                  key={project.id}
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.1 }}
-                  transition={{ duration: 0.7, delay: (index % 3) * 0.1, ease: [0.16, 1, 0.3, 1] }}
-                >
-                  <ProjectCard project={project} />
-                </motion.div>
-              ))}
-            </div>
-          )}
+        <section className="pf-more" style={{ marginTop: "2rem" }}>
+          <div className="pf-grid">
+            {rest.map((project, index) => (
+              <motion.div
+                id={`project-${project.id}`}
+                key={project.id}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.1 }}
+                transition={{ duration: 0.7, delay: (index % 3) * 0.1, ease: [0.16, 1, 0.3, 1] }}
+              >
+                <ProjectCard project={project} />
+              </motion.div>
+            ))}
+          </div>
         </section>
       )}
 

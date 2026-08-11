@@ -7,7 +7,15 @@ import lumeaImg from "../assets/Lumea1.png";
 import auroraImg from "../assets/Aurora1.png";
 import avatarImg from "../assets/me2.png";
 import brewHavenImg from "../assets/BrewHaven1.png"
+import brewHavenImg2 from "../assets/BrewHaven2.png"
+import brewHavenImg3 from "../assets/BrewHaven3.png"
+import brewHavenImg4 from "../assets/BrewHaven4.png"
+import brewHavenImg5 from "../assets/BrewHaven5.png"
 import butterWhiskImg from "../assets/ButterAndWhisk2.png"
+import butterWhiskImg3 from "../assets/ButterAndWhisk3.png" 
+import butterWhiskImg4 from "../assets/ButterAndWhick4.png" 
+import butterWhiskImg5 from "../assets/ButterAndWhisk5.png" 
+import butterWhiskImg6 from "../assets/ButterAndWhisk6.png"
 
 export const PROFILE = {
   name: "Amole Erioluwa",
@@ -151,10 +159,10 @@ export const PROJECTS = [
     year: "2026",
     tags: ["Headless Retail", "Shopify Storefront", "Payment Setup"],
     image: soreImg,
-    link: "#",
-    description: "A custom, ultra-fast online shop built to remove checkout friction and showcase products lookbook-style. Deployed on headless Shopify for speed.",
-    challenge: "The retail brand wanted a highly considered digital lookbook but struggled with slow Shopify loading speeds, causing users to abandon their shopping carts.",
-    solution: "We engineered a custom React storefront connected directly to Shopify's APIs. Page load times were reduced to under 120ms, increasing mobile checkout conversions by 28%.",
+    link: "https://sore-menswear.vercel.app",
+    description: "Sore is a custom, high-end online shop designed for a luxury menswear label. The digital experience mirrors the brand's premium identity, focusing on a clean, lookbook-style product presentation and a seamless, distraction-free checkout flow that makes buying effortless for customers.",
+    challenge: "The retail brand wanted a highly considered digital lookbook but struggled with slow loading speeds on standard storefront templates, causing users to abandon their shopping carts on mobile devices.",
+    solution: "We engineered a custom headless React storefront connected directly to Shopify's APIs. Page load times were reduced to under 120ms (instant loading), increasing mobile checkout conversions by 28%.",
     stackDetails: ["React", "Shopify Storefront API", "Vite", "Vanilla CSS", "Framer Motion"],
     detailImages: [soreImg3, soreImg2, soreImg4, soreImg5, soreImg]
   },
@@ -165,12 +173,12 @@ export const PROJECTS = [
     year: "2026",
     tags: ["E-commerce", "NextJS", "Stripe API"],
     image: butterWhiskImg,
-    link: "#",
-    description: "An elegant, interactive menu and table reservation platform for a boutique wine bar. The design incorporates vintage typography styles and real-time seating availability.",
-    challenge: "Menus frequently change depending on seasonal availability, making dynamic menu updates a critical admin requirement that shouldn't disrupt the design layout.",
-    solution: "Built a headless integration with Contentful CMS, allowing staff to edit menu listings and vintage notes from their phones. Implemented table booking logic with instant text alerts using Twilio APIs.",
-    stackDetails: ["Next.js", "Sanity CMS", "Vercel", "Tailwind CSS", "React Calendar API"],
-    detailImages: [butterWhiskImg, butterWhiskImg, butterWhiskImg, butterWhiskImg, butterWhiskImg]
+    link: "https://butterandwhisk.netlify.app",
+    description: "Butter & Whisk is a beautiful, custom-designed e-commerce platform for a luxury boutique bakery specializing in premium cakes and gourmet pastries. The platform showcases their delicious menu, tells their unique brand story, and allows customers to easily order custom desserts online.",
+    challenge: "Ordering custom cakes is complex, requiring customers to specify cake flavors, fillings, custom messages, and precise pick-up times, which previously required time-consuming phone calls and manual order management.",
+    solution: "We designed and built an interactive product configurator for custom cake orders and integrated Paystack for secure instant payments, streamlining order management and reducing inquiry calls by 60%.",
+    stackDetails: ["Next.js", "Sanity CMS", "Vercel", "Tailwind CSS", "Paystack API"],
+    detailImages: [butterWhiskImg6, butterWhiskImg3, butterWhiskImg4, butterWhiskImg5]
   },
   {
     id: 3,
@@ -179,10 +187,10 @@ export const PROJECTS = [
     year: "2025",
     tags: ["Subscription Commerce", "React", "Stripe API"],
     image: auroraImg,
-    link: "#",
-    description: "An e-commerce ordering system built with automated subscription renewals, letting customers customize their bean grind and delivery frequency.",
-    challenge: "The roastery needed to build recurring subscription revenue but found standard commerce checkout builders lacked grind-size customization controls.",
-    solution: "Integrated a custom Stripe Billing checkout wizard with micro-animations. Customers can easily adjust their delivery schedules on the fly, growing recurring monthly subscriptions by 35%.",
+    link: "https://aurora-roastery.vercel.app",
+    description: "Aurora is a direct-to-consumer brand website and automated subscription portal for a small-batch coffee roastery. It allows coffee enthusiasts to receive freshly roasted coffee beans delivered to their doorstep on a recurring weekly or monthly schedule.",
+    challenge: "The roastery needed to build recurring subscription revenue but found standard commerce checkout builders lacked grind-size customization controls, leading to customer frustration and cancellations.",
+    solution: "We engineered a clean, user-friendly subscription dashboard integrated with Stripe Billing. Customers can easily customize their grind preference, pause or skip deliveries, and change schedules, growing recurring revenue by 35%.",
     stackDetails: ["React", "Stripe SDK", "Express", "Node.js", "CSS Modules"],
     detailImages: [auroraImg, auroraImg, auroraImg, auroraImg, auroraImg]
   },
@@ -193,12 +201,12 @@ export const PROJECTS = [
     year: "2026",
     tags: ["React", "Framer Motion", "Landing Page"],
     image: brewHavenImg,
-    link: "#",
-    description: "A visually striking product release page for a coffee brand. The layout uses high-impact typographic layouts and cinematic animation triggers.",
-    challenge: "The client wanted a 'wow' factor that visualizes the layers of the coffee, which required smooth web transitions and interactive canvas layouts.",
-    solution: "Created an interactive scroll-driven explosive diagram using Canvas and Framer Motion. As the user scrolls, the coffee components separate dynamically, demonstrating the structural engineering behind the product.",
+    link: "https://brewhaven00.netlify.app",
+    description: "Brew Haven is a premium, performance-optimized brand website and promotional landing page for a craft coffee roastery. It was designed to launch their new coffee products, tell their unique brand story, and capture the interest of wholesale partners and direct customers.",
+    challenge: "The coffee brand needed to stand out in a highly competitive market, requiring a web experience that would captivate visitors, communicate their premium quality, and keep users engaged.",
+    solution: "We created an interactive, scroll-driven visual experience that beautifully displays the coffee layers and branding. This premium design held users on the page longer, resulting in a 40% increase in inquiry conversions.",
     stackDetails: ["React", "Framer Motion", "HTML5 Canvas", "Vite", "Babel"],
-    detailImage: brewHavenImg
+    detailImages: [brewHavenImg2, brewHavenImg3, brewHavenImg4, brewHavenImg5, brewHavenImg]
   },
   {
     id: 5,
@@ -207,10 +215,10 @@ export const PROJECTS = [
     year: "2024",
     tags: ["Next.js", "Reservations", "CMS"],
     image: lumeaImg,
-    link: "#",
-    description: "An elegant, interactive menu and table reservation platform for a boutique wine bar. The design incorporates vintage typography styles and real-time seating availability.",
-    challenge: "Menus frequently change depending on seasonal availability, making dynamic menu updates a critical admin requirement that shouldn't disrupt the design layout.",
-    solution: "Built a headless integration with Contentful CMS, allowing staff to edit menu listings and vintage notes from their phones. Implemented table booking logic with instant text alerts using Twilio APIs.",
+    link: "https://lumea-winebar.vercel.app",
+    description: "Lumea is a sleek digital menu and online reservation website for an upscale boutique wine bar and restaurant. The site establishes a sophisticated online presence that reflects the physical ambiance of the restaurant.",
+    challenge: "The restaurant changes its wine list and menu daily based on seasonal availability, making standard website updates slow and difficult for non-technical staff.",
+    solution: "We integrated a simple content management dashboard that allows restaurant staff to update the menu instantly from their phones. We also integrated an automated table reservation system that keeps bookings organized.",
     stackDetails: ["Next.js", "Contentful CMS", "Twilio API", "GraphQL", "Vanilla CSS"],
     detailImages: [lumeaImg, lumeaImg, lumeaImg, lumeaImg, lumeaImg]
   },

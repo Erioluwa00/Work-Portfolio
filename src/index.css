@@ -300,11 +300,18 @@ body.drawer-open {
 
 .pf-cs-meta-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: 120px 1fr auto;
   gap: 2rem;
   margin-top: 2.5rem;
   border-top: 1px solid var(--pf-line);
   padding-top: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .pf-cs-meta-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
 
 .pf-cs-meta-item span:first-child {
