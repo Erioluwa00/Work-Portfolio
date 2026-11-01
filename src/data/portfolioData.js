@@ -22,11 +22,11 @@ export const PROFILE = {
   avatar: avatarImg,
   tagline:
     "We design and build fast, modern, and mobile-friendly websites that help businesses build trust, stand out, and attract more customers.",
-  email: "hello@amoleerioluwa.com",
+  email: "erioluwamole12@gmail.com",
   socials: [
-    { label: "GitHub", href: "#" },
-    { label: "LinkedIn", href: "#" },
-    { label: "Instagram", href: "#" },
+    { label: "GitHub", href: "https://github.com/Erioluwa00" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/erioluwa-amole-387405352/" },
+    { label: "Instagram", href: "https://www.instagram.com/erioluwa_d/" },
   ],
 };
 
