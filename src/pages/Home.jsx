@@ -215,7 +215,7 @@ export default function Home({ onOpenContact }) {
       )}
       */}
 
-      {/* Services & Packages Section */}
+      {/* Services & Packages Section (Commented out - uncomment when needed)
       <section className="pf-services-section" id="services">
         <div className="pf-section-label">
           <span>Our Services</span>
@@ -246,6 +246,7 @@ export default function Home({ onOpenContact }) {
           ))}
         </div>
       </section>
+      */}
 
       {/* FAQ Accordion Section */}
       <section className="pf-faq-section" id="faq">

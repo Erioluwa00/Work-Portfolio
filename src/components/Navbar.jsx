@@ -45,9 +45,9 @@ export default function Navbar({ onOpenContact }) {
 
             {/* Links */}
             <div className="pf-nav-links">
-              <Link to="/#services" onClick={handleScrollTo("services")} className="pf-nav-link">
+              {/* <Link to="/#services" onClick={handleScrollTo("services")} className="pf-nav-link">
                 Services
-              </Link>
+              </Link> */}
               <Link to="/#work" onClick={handleScrollTo("work")} className="pf-nav-link">
                 Projects
               </Link>
@@ -85,7 +85,7 @@ export default function Navbar({ onOpenContact }) {
             transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
           >
             <div className="pf-nav-mobile-links">
-              <Link
+              {/* <Link
                 to="/#services"
                 onClick={(e) => {
                   setIsMenuOpen(false);
@@ -94,7 +94,7 @@ export default function Navbar({ onOpenContact }) {
                 className="pf-nav-mobile-link"
               >
                 Services
-              </Link>
+              </Link> */}
               <Link
                 to="/#work"
                 onClick={(e) => {
